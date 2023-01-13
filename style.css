@@ -1,15 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto:wght@100&display=swap');
+
 *{
     margin: 0;
 }
 
-a:link, a:visited{
+.button{
+    background-color: white;
+    border-top: 5px white solid;
+    padding: 5px;
+    margin-right: 10px;
+    color: #6b9ba9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    border-top: 5px #006c80 solid;
+    color: #006c80;
+}
+
+.footer a:link{
     color: white;
     text-decoration: none;
+    transition-duration: 0.4s;
 }
-a:hover{
+.footer a:visited{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.footer a:hover{
     color: grey;
 }
-a:active{
+.footer a:active{
     color: white;
 }
 
@@ -17,32 +44,44 @@ a:active{
     display: flex;
     flex-direction: column;
     background-color: white;
+
+    font-family: 'Crimson Pro', serif;
     
 }
 
+@media(min-width: 900px){}          /*here's your break-point  anything under this px gets edited different*/
+
 .header{
-    flex: 1;
+    flex: 2;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
+    /* background-color: #000031; */
+    color: #006c80;
+    padding: 5px;
     
-    background-color: #000031;
-    color: white;
-    padding: 30px;
+    /* border: 5px white solid; */
 }
 .head1{
     flex: 3;
+    flex-basis: 50%;            /*flex box width*/
     align-self: center;
 
-    text-align: center;
+    text-align: right;
     /* border: 5px white solid; */
 }
 .head2{
     flex: 1;
-    align-self: center;
-
-    text-align: center;
-    /* border: 5px white solid; */
+    flex-basis: 25%;            /*flex box width*/
+    text-align:right;
+    margin: 0px;
+    
+    /* border: 5px white solid;    */
 }
+#resume{
+    text-align: left;
+}
+    
 
 
 .main{
@@ -51,10 +90,20 @@ a:active{
     justify-content: center;
     flex-direction: column;
 
-    background-color: #504e70;
+    
     color: white;
     
     /* border: 5px white solid; */
+}
+#mainResume{
+    flex-direction: column;
+
+    background-color: #006c80;
+}
+.mainSection{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
 }
 .mainDiv{
     flex: 1;
@@ -64,9 +113,21 @@ a:active{
 #objective{
     text-align: start;
     width: 300px;
+    /* background-color: #006c80; */
+    background: rgba(0, 42.35, 50.2, 0.5);
+    /* border: #000031; */
 }
 #projects{
-    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color: #AB530A;
+}
+#filler{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
 }
 
 .footer{
@@ -75,7 +136,8 @@ a:active{
     justify-content: center;
     flex-direction: row;
 
-    background-color: #000031;
+    /* background-color: #000031; */
+    background: rgba(0, 0, 19.22, 0.3);
     color: white;
     height: 500px;
 }
