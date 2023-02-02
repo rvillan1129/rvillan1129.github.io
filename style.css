@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto:wght@100&display=swap');
 
+@media(min-width: 900px){}          /*here's your break-point  anything under this px gets edited different*/
+
 *{
     margin: 0;
+    padding: 0;
 }
+body{
+    background-image: url("images/pexels-aaron-ulsh-2860705.jpg");
+    /* background-image: linear-gradient(to bottom, #5DD1FC, #56CAFB, #46BAF7, #39B6FA);       make this an alternative bg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: 'Crimson Pro', serif;
+}
+.site img{
+    border-radius: 10px;
+    height: 164px;
+    width: 313px;
+}
+
 
 .button{
     background-color: white;
@@ -23,36 +41,33 @@
     color: #006c80;
 }
 
-.footer a:link{
+footer a:link{
     color: white;
     text-decoration: none;
     transition-duration: 0.4s;
 }
-.footer a:visited{
+footer a:visited{
     color: white;
     text-decoration: none;
     transition-duration: 0.4s;
 }
-.footer a:hover{
+footer a:hover{
     color: grey;
 }
-.footer a:active{
+footer a:active{
     color: white;
 }
 
-.container{
+main {         /*holds site cards*/
     display: flex;
     flex-direction: column;
-    background-color: white;
 
-    font-family: 'Crimson Pro', serif;
-    
+    padding: 0px 0px 0px 0px;
+
+    border: 5px solid white;
 }
 
-@media(min-width: 900px){}          /*here's your break-point  anything under this px gets edited different*/
-
-.header{
-    flex: 2;
+header{
     display: flex;
     justify-content: space-around;
 
@@ -82,64 +97,72 @@
     text-align: left;
 }
     
-
-
-.main{
-    flex: 3;
+main {                                      /*holds site cards*/
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 
-    
-    color: white;
+    padding: 10px 0px 10px 0px;
     
     /* border: 5px white solid; */
 }
-#mainResume{
-    flex-direction: column;
-
-    background-color: #006c80;
-}
-.mainSection{
+.siteCard{
     display: flex;
-    flex: 1;
-    flex-direction: row;
-}
-.mainDiv{
-    flex: 1;
-
-    padding: 5px 50px 0px 50px;
-}
-#objective{
-    text-align: start;
-    width: 300px;
-    /* background-color: #006c80; */
-    background: rgba(0, 42.35, 50.2, 0.5);
-    /* border: #000031; */
-}
-#projects{
-    height: 200px;
-    width: 200px;
-    margin: auto;
-    background-color: #AB530A;
-}
-#filler{
-    height: 200px;
-    width: 200px;
-    margin: auto;
-    background-color: white;
-}
-
-.footer{
-    flex: 1;
-    display: flex;
+    flex-flow: row wrap;            /*flex-direction, flex-wrap*/
     justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    margin: 20px;
+    color: #00224C;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+
+    transition-duration: 0.2s;
+
+}
+.siteCard:hover{
+    border-radius: 30px;
+    border: 5px black solid;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.site{
+    flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
+    align-items: center;
+
+    padding: 10px;
+    text-align: center;
+    /* border: 5px white solid; */
+}
+
+.info{
+    display: flex;
+    flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
+    align-self: center;
+
+    padding: 0px 5px 0px 10px;
+
+    border-left: 4px black solid;
+}
+.info table{
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    border-collapse: collapse;
+}
+.info th{
+    font-size: 20px;
+}
+
+
+footer{
+    display: flex;
+    /* justify-content: center; */
     flex-direction: row;
 
     /* background-color: #000031; */
     background: rgba(0, 0, 19.22, 0.3);
     color: white;
-    height: 500px;
 }
 .feet{
     flex: 1;
