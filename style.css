@@ -7,13 +7,15 @@
     padding: 0;
 }
 body{
-    background-image: url("images/pexels-aaron-ulsh-2860705.jpg");
-    /* background-image: linear-gradient(to bottom, #5DD1FC, #56CAFB, #46BAF7, #39B6FA);       make this an alternative bg */
+    /*gradient and url are stacked; if image unavailable, gradient will show; both bg can be seen onload*/
+    background-image: url("images/pexels-aaron-ulsh-2860705.jpg"), linear-gradient(to bottom, #5DD1FC, #56CAFB, #46BAF7, #39B6FA);
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     font-family: 'Crimson Pro', serif;
+    padding: 20px 0 0 0;
 }
 .site img{
     border-radius: 10px;
@@ -58,43 +60,65 @@ footer a:active{
     color: white;
 }
 
-main {         /*holds site cards*/
-    display: flex;
-    flex-direction: column;
-
-    padding: 0px 0px 0px 0px;
-
-    border: 5px solid white;
-}
 
 header{
     display: flex;
+    flex-flow: row no-wrap;            /*flex-direction, flex-wrap*/
     justify-content: space-around;
 
-    /* background-color: #000031; */
-    color: #006c80;
-    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 10px 0 10px 0;
     
     /* border: 5px white solid; */
 }
-.head1{
-    flex: 3;
-    flex-basis: 50%;            /*flex box width*/
+header h1{
+    font-size: 50px;
+}
+header h2{
+    font-size: 25px;
+}
+.earL{
+    flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
     align-self: center;
 
-    text-align: right;
-    /* border: 5px white solid; */
+    text-align: center;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+    border-radius: 30px;
+    padding: 10px;
+
+    transition-duration: 0.3s;
 }
-.head2{
-    flex: 1;
-    flex-basis: 25%;            /*flex box width*/
-    text-align:right;
-    margin: 0px;
+.earL:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.earR{
+    flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
+    display: flex;
+
+    margin-left: 25%;
+
+    /* border: 5px black solid;    */
+}
+.earR_inner{
+    flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
+    align-self: center;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-left: 25px;
+    padding: 10px;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+    border-radius: 30px;
     
-    /* border: 5px white solid;    */
+    transition-duration: 0.3s;
 }
-#resume{
-    text-align: left;
+.earR_inner:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition-duration: 0.5s;
 }
     
 main {                                      /*holds site cards*/
@@ -102,7 +126,7 @@ main {                                      /*holds site cards*/
     flex-direction: column;
     align-items: center;
 
-    padding: 10px 0px 10px 0px;
+    padding: 50px 0 10px 0;
     
     /* border: 5px white solid; */
 }
@@ -122,8 +146,8 @@ main {                                      /*holds site cards*/
 
 }
 .siteCard:hover{
-    border-radius: 30px;
-    border: 5px black solid;
+    /* border-radius: 30px; */
+    /* border: 5px black solid; */
     background-color: rgba(255, 255, 255, 0.9);
 }
 .site{
@@ -134,7 +158,6 @@ main {                                      /*holds site cards*/
     text-align: center;
     /* border: 5px white solid; */
 }
-
 .info{
     display: flex;
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
@@ -152,6 +175,29 @@ main {                                      /*holds site cards*/
 }
 .info th{
     font-size: 20px;
+}
+
+.resume{
+    display: flex;
+    flex-flow: column wrap;            /*flex-direction, flex-wrap*/
+
+    background: rgba(0, 0, 19.22, 0.6);
+    margin-top: 10px;
+    padding: 10px 10px 10px 25%;
+    color: white;
+    text-align: left;
+
+    /* border: 10px white solid; */
+}
+.section{
+    flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
+
+    padding-left: 10px;
+
+    /* border: 5px red solid; */
+}
+.resume h2{
+    font-size: 30px;
 }
 
 

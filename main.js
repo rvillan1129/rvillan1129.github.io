@@ -17,5 +17,5 @@ function reveal(divName, partnerName){
 }
 
 function visitSite(siteName){
-    window.open(siteName, "_blank");
+    window.open(siteName);
 }
