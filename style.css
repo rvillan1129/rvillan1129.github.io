@@ -17,11 +17,7 @@ body{
     font-family: 'Crimson Pro', serif;
     padding: 20px 0 0 0;
 }
-.site img{
-    border-radius: 10px;
-    height: 164px;
-    width: 313px;
-}
+
 
 
 .button{
@@ -42,24 +38,6 @@ body{
     border-top: 5px #006c80 solid;
     color: #006c80;
 }
-
-footer a:link{
-    color: white;
-    text-decoration: none;
-    transition-duration: 0.4s;
-}
-footer a:visited{
-    color: white;
-    text-decoration: none;
-    transition-duration: 0.4s;
-}
-footer a:hover{
-    color: grey;
-}
-footer a:active{
-    color: white;
-}
-
 
 header{
     display: flex;
@@ -89,6 +67,7 @@ header h2{
     padding: 10px;
 
     transition-duration: 0.3s;
+    cursor: pointer;
 }
 .earL:hover{
     background-color: rgba(255, 255, 255, 0.6);
@@ -115,6 +94,7 @@ header h2{
     border-radius: 30px;
     
     transition-duration: 0.3s;
+    cursor: pointer;
 }
 .earR_inner:hover{
     background-color: rgba(255, 255, 255, 1);
@@ -158,6 +138,12 @@ main {                                      /*holds site cards*/
     text-align: center;
     /* border: 5px white solid; */
 }
+.site img{
+    border-radius: 10px;
+    height: 164px;
+    width: 313px;
+}
+
 .info{
     display: flex;
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
@@ -203,19 +189,52 @@ main {                                      /*holds site cards*/
 
 footer{
     display: flex;
-    /* justify-content: center; */
-    flex-direction: row;
+    flex-flow: row wrap;
 
     /* background-color: #000031; */
-    background: rgba(0, 0, 19.22, 0.3);
+    background: rgba(0, 0, 19.22, 0.6);
     color: white;
+    padding: 40px;
+}
+footer a:link{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+footer a:visited{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+footer a:hover{
+    color: grey;
+}
+footer a:active{
+    color: white;
+}
+footer i{
+    font-size: 10px;
 }
 .feet{
     flex: 1;
     align-self: center;
 
     text-align: center;
+    border: 5px red solid;
 }
+.feet table{
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+.feet td{   
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+.feet th{
+    padding-bottom: 10px;
+}
+
 
 
 /* yellow #CDCE51 */
