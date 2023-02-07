@@ -8,14 +8,14 @@
 }
 body{
     /*gradient and url are stacked; if image unavailable, gradient will show; both bg can be seen onload*/
-    background-image: url("images/pexels-aaron-ulsh-2860705.jpg"), linear-gradient(to bottom, #5DD1FC, #56CAFB, #46BAF7, #39B6FA);
+    background-image: url("images/pexels-aaron-ulsh-2860705.jpg");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     font-family: 'Crimson Pro', serif;
-    padding: 20px 0 0 0;
+    /* padding: 20px 0 0 0; */
 }
 
 
@@ -44,7 +44,7 @@ header{
     flex-flow: row no-wrap;            /*flex-direction, flex-wrap*/
     justify-content: space-around;
 
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 19.22, 0.3);
     color: black;
     padding: 10px 0 10px 0;
     
@@ -60,9 +60,9 @@ header h2{
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
     align-self: center;
 
+    background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    border-left: 5px black solid;
-    border-right: 5px black solid;
+    border: 2px black solid;
     border-radius: 30px;
     padding: 10px;
 
@@ -70,7 +70,7 @@ header h2{
     cursor: pointer;
 }
 .earL:hover{
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .earR{
@@ -85,12 +85,12 @@ header h2{
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
     align-self: center;
 
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
     margin-left: 25px;
     padding: 10px;
-    border-left: 5px black solid;
-    border-right: 5px black solid;
+    border: 2px black solid;
+    /* border-right: 5px black solid; */
     border-radius: 30px;
     
     transition-duration: 0.3s;
@@ -98,7 +98,6 @@ header h2{
 }
 .earR_inner:hover{
     background-color: rgba(255, 255, 255, 1);
-    transition-duration: 0.5s;
 }
     
 main {                                      /*holds site cards*/
@@ -106,7 +105,8 @@ main {                                      /*holds site cards*/
     flex-direction: column;
     align-items: center;
 
-    padding: 50px 0 10px 0;
+    padding: 50px 0 100px 0;
+    background: rgba(0, 0, 19.22, 0.1);
     
     /* border: 5px white solid; */
 }
@@ -119,8 +119,7 @@ main {                                      /*holds site cards*/
     border-radius: 30px;
     margin: 20px;
     color: #00224C;
-    border-left: 5px black solid;
-    border-right: 5px black solid;
+    border: 1px black solid;
 
     transition-duration: 0.2s;
 
@@ -168,7 +167,6 @@ main {                                      /*holds site cards*/
     flex-flow: column wrap;            /*flex-direction, flex-wrap*/
 
     background: rgba(0, 0, 19.22, 0.6);
-    margin-top: 10px;
     padding: 10px 10px 10px 25%;
     color: white;
     text-align: left;
@@ -192,7 +190,7 @@ footer{
     flex-flow: row wrap;
 
     /* background-color: #000031; */
-    background: rgba(0, 0, 19.22, 0.6);
+    background: rgba(0, 0, 19.22, 0.9);
     color: white;
     padding: 40px;
 }
@@ -220,18 +218,19 @@ footer i{
     align-self: center;
 
     text-align: center;
-    border: 5px red solid;
+    /* border: 5px red solid; */
 }
 .feet table{
     margin: auto;
     border-collapse: collapse;
-    text-align: left;
 }
 .feet td{   
+    text-align: left;
     padding-left: 50px;
     padding-bottom: 10px;
 }
 .feet th{
+    text-align: right;
     padding-bottom: 10px;
 }
 
