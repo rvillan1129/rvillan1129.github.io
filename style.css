@@ -17,11 +17,19 @@ body{
     font-family: 'Crimson Pro', serif;
     /* padding: 20px 0 0 0; */
 }
-
 header{
+    background-color: rgba(0, 0, 19.22, 0.3);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+}
+header h1{
+    font-size: 75px;
+}
+.navBar{
     display: flex;
     flex-flow: row no-wrap;            /*flex-direction, flex-wrap*/
-    justify-content: space-around;
+    justify-content: flex-end;
 
     background-color: rgba(0, 0, 19.22, 0.3);
     color: black;
@@ -29,53 +37,32 @@ header{
     
     /* border: 5px white solid; */
 }
-header h1{
-    font-size: 50px;
-}
-header h2{
+.navBar h2{
     font-size: 25px;
 }
-.earL{
-    flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
-    align-self: center;
 
-    background-color: rgba(255, 255, 255, 0.6);
-    text-align: center;
-    border: 2px white solid;
-    border-radius: 30px;
-    padding: 10px;
-
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-.earL:hover{
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.earR{
+.panel{
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
     display: flex;
 
-    margin-left: 25%;
-
+    margin-right: 5%;
     /* border: 5px black solid;    */
 }
-.earR_inner{
+.button{
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
     align-self: center;
 
     background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    margin-left: 25px;
     padding: 10px;
+    margin: 0 10px 0 10px;
     border: 2px white solid;
-    /* border-right: 5px black solid; */
     border-radius: 30px;
     
     transition-duration: 0.3s;
     cursor: pointer;
 }
-.earR_inner:hover{
+.button:hover{
     background-color: rgba(255, 255, 255, 1);
 }
     
@@ -98,7 +85,7 @@ main {                                      /*holds site cards*/
     border-radius: 30px;
     margin: 20px;
     color: #00224C;
-    border: 1px white solid;
+    border: 1px #FFFFFF solid;
 
     transition-duration: 0.2s;
 
@@ -129,7 +116,7 @@ main {                                      /*holds site cards*/
 
     padding: 0px 5px 0px 10px;
 
-    border-left: 4px black solid;
+    border-left: 3px black solid;
 }
 .info table{
     width: 250px;
@@ -165,6 +152,7 @@ footer{
 
     /* background-color: #000031; */
     background: rgba(0, 0, 19.22, 0.9);
+    border-bottom: 5px black solid;
     color: white;
     padding: 40px;
 }
