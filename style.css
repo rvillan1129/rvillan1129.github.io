@@ -25,42 +25,31 @@ header{
     background-color: rgba(0, 0, 19.22, 0.5);
     color: #FFFFFF;
     text-align: center;
-    padding: 25px;
+    padding: 20px 0 30px 0;
 }
 header h1{
     font-size: 70px;
 }
 header h2{
-    font-size: 35px;
-}
-header table{
-    border-collapse: collapse;
-}
-header td{
-    padding-left: 55%;
+    font-size: 30px;
 }
 
-.navBar{
+.heading{
     display: flex;
-    flex-flow: row no-wrap;            /*flex-direction, flex-wrap*/
-    justify-content: flex-end;
-
-    background-color: rgba(0, 0, 19.22, 0.5);
-    color: black;
-    padding: 10px 0 10px 0;
-    
-    /* border: 5px white solid; */
-}
-.navBar h2{
-    font-size: 25px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .panel{
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
     display: flex;
 
-    margin-right: 5%;
-    /* border: 5px black solid;    */
+    color: black;
+    /* border: 5px black solid; */   
+}
+.panel h2{
+    font-size: 25px;
 }
 .button{
     flex: 0 0 auto;          /* flex grow, flex shrink, flex basis*/
